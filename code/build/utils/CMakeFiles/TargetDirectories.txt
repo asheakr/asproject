@@ -1,6 +1,0 @@
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/install/strip.dir
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/install/local.dir
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/install.dir
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/list_install_components.dir
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/rebuild_cache.dir
-/home/ashe/AS/asproject/code/build/utils/CMakeFiles/edit_cache.dir

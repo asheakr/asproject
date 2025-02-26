@@ -1,1 +1,0 @@
-/home/ashe/AS/asproject/code/devel/.private/mav_system_msgs/share/roseus/ros/mav_system_msgs/msg/CpuInfo.l
