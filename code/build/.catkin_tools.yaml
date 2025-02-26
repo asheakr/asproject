@@ -1,0 +1,6 @@
+devel_space: /home/ammar/asproject/code/devel
+install: false
+install_space: /home/ammar/asproject/code/install
+profile: default
+source_space: /home/ammar/asproject/code/src
+workspace: /home/ammar/asproject/code

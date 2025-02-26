@@ -1,0 +1,5 @@
+Symlinking /home/ammar/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig.cmake
+Symlinking /home/ammar/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig-version.cmake
+Symlinking /home/ammar/asproject/code/devel/lib/controller_pkg/controller_node
+Symlinking /home/ammar/asproject/code/devel/lib/controller_pkg/traj_publisher
+Symlinking /home/ammar/asproject/code/devel/lib/pkgconfig/controller_pkg.pc
