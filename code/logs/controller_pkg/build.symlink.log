@@ -1,0 +1,5 @@
+Symlinking /home/ashe/AS/asproject/code/devel/lib/controller_pkg/controller_node
+Symlinking /home/ashe/AS/asproject/code/devel/lib/controller_pkg/traj_publisher
+Symlinking /home/ashe/AS/asproject/code/devel/lib/pkgconfig/controller_pkg.pc
+Symlinking /home/ashe/AS/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig-version.cmake
+Symlinking /home/ashe/AS/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig.cmake

@@ -1,0 +1,1 @@
+/home/ashe/AS/asproject/code/devel/.private/mav_planning_msgs/share/roseus/ros/mav_planning_msgs/srv/PolygonService.l

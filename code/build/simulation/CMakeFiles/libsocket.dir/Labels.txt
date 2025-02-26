@@ -1,0 +1,13 @@
+# Target labels
+ libsocket
+# Source files and their labels
+/home/ashe/AS/asproject/code/build/simulation/CMakeFiles/libsocket
+/home/ashe/AS/asproject/code/build/simulation/CMakeFiles/libsocket.rule
+/home/ashe/AS/asproject/code/build/simulation/CMakeFiles/libsocket-complete.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-install.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-mkdir.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-download.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-update.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-patch.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-configure.rule
+/home/ashe/AS/asproject/code/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-build.rule
