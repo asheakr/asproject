@@ -1,0 +1,7 @@
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Installing: /home/akhil/Challenge/asproject/code/devel/lib/cmake/utils/utilsConfig.cmake
+-- Installing: /home/akhil/Challenge/asproject/code/devel/lib/cmake/utils/utilsConfigVersion.cmake
+-- Installing: /home/akhil/Challenge/asproject/code/devel/include/utils/time_manager
+-- Installing: /home/akhil/Challenge/asproject/code/devel/include/utils/time_manager/time_manager.h
+-- Installing: /home/akhil/Challenge/asproject/code/devel/include/utils/time_manager/clock.h
