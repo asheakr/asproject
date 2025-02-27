@@ -1,8 +1,11 @@
 <launch>
-    <!-- Node to convert depth image to point cloud -->
-    <node pkg="depth_image_proc" type="point_cloud_xyzrgb" name="depth_to_pointcloud" output="screen">
+    <!-- Start a nodelet manager -->
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager"/>
+
+    <!-- Load depth_image_proc/point_cloud_xyz into the nodelet manager -->
+    <node pkg="nodelet" type="nodelet" name="depth_to_pointcloud" args="load depth_image_proc/point_cloud_xyz nodelet_manager">
         <remap from="image_rect" to="/realsense/depth/image"/>
         <remap from="camera_info" to="/realsense/depth/camera_info"/>
-        <remap from="points" to="/realsense/depth/points"/>
+        <remap from="points" to="/realsense/depth/pointcloud_output"/>
     </node>
 </launch>
