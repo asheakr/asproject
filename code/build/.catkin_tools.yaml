@@ -1,6 +1,0 @@
-devel_space: /home/akhil/Challenge/asproject/code/devel
-install: false
-install_space: /home/akhil/Challenge/asproject/code/install
-profile: default
-source_space: /home/akhil/Challenge/asproject/code/src
-workspace: /home/akhil/Challenge/asproject/code

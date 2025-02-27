@@ -1,7 +1,0 @@
-controller_pkg
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/cmake.lock /home/akhil/Challenge/asproject/code/devel/./cmake.lock
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/lib/pkgconfig/controller_pkg.pc /home/akhil/Challenge/asproject/code/devel/lib/pkgconfig/controller_pkg.pc
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/lib/controller_pkg/controller_node /home/akhil/Challenge/asproject/code/devel/lib/controller_pkg/controller_node
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/lib/controller_pkg/traj_publisher /home/akhil/Challenge/asproject/code/devel/lib/controller_pkg/traj_publisher
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/share/controller_pkg/cmake/controller_pkgConfig-version.cmake /home/akhil/Challenge/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig-version.cmake
-/home/akhil/Challenge/asproject/code/devel/.private/controller_pkg/share/controller_pkg/cmake/controller_pkgConfig.cmake /home/akhil/Challenge/asproject/code/devel/share/controller_pkg/cmake/controller_pkgConfig.cmake

@@ -1,4 +1,0 @@
-/home/akhil/Challenge/asproject/code/devel/lib/cmake/utils/utilsConfig.cmake
-/home/akhil/Challenge/asproject/code/devel/lib/cmake/utils/utilsConfigVersion.cmake
-/home/akhil/Challenge/asproject/code/devel/include/utils/time_manager/time_manager.h
-/home/akhil/Challenge/asproject/code/devel/include/utils/time_manager/clock.h

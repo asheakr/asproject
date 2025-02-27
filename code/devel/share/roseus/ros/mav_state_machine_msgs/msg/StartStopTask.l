@@ -1,1 +1,0 @@
-/home/akhil/Challenge/asproject/code/devel/.private/mav_state_machine_msgs/share/roseus/ros/mav_state_machine_msgs/msg/StartStopTask.l

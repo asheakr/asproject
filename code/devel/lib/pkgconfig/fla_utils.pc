@@ -1,1 +1,0 @@
-/home/akhil/Challenge/asproject/code/devel/.private/fla_utils/lib/pkgconfig/fla_utils.pc
