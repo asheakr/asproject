@@ -2,10 +2,11 @@
 #include <nav_msgs/Path.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <octomap_msgs/Octomap.h>
-#include <octomap_ros/conversions.h>
+#include <octomap_msgs/conversions.h>  // Changed to octomap_msgs conversions
 #include <octomap/octomap.h>
 #include <visualization_msgs/MarkerArray.h>
 #include <std_msgs/Bool.h>
+#include <std_srvs/Trigger.h>
 #include <queue>
 #include <vector>
 #include <unordered_map>
@@ -81,6 +82,9 @@ private:
     struct Node3D {
         int x, y, z;
         
+        // Default constructor - needed for unordered_map
+        Node3D() : x(0), y(0), z(0) {}
+        
         Node3D(int x, int y, int z) : x(x), y(y), z(z) {}
         
         bool operator==(const Node3D& other) const {
@@ -117,8 +121,26 @@ private:
             delete octomap_;
         }
         
-        // Convert from message to octomap
-        octomap_ = dynamic_cast<octomap::OcTree*>(octomap_msgs::msgToMap(*msg));
+        // Convert from message to octomap - Fixed: using octomap_msgs conversion functions
+        if (msg->binary) {
+            octomap::AbstractOcTree* abstract_tree = octomap_msgs::binaryMsgToMap(*msg);
+            if (abstract_tree) {
+                octomap_ = dynamic_cast<octomap::OcTree*>(abstract_tree);
+                if (!octomap_) {
+                    delete abstract_tree;
+                    ROS_ERROR("Error converting binary octomap message to OcTree");
+                }
+            }
+        } else {
+            octomap::AbstractOcTree* abstract_tree = octomap_msgs::fullMsgToMap(*msg);
+            if (abstract_tree) {
+                octomap_ = dynamic_cast<octomap::OcTree*>(abstract_tree);
+                if (!octomap_) {
+                    delete abstract_tree;
+                    ROS_ERROR("Error converting full octomap message to OcTree");
+                }
+            }
+        }
         
         if (!octomap_) {
             ROS_ERROR("Failed to convert octomap message to octomap");
@@ -161,10 +183,18 @@ private:
     
     /**
      * @brief Service callback for planning a path between two poses
+     * Fixed: Proper service function signature
      */
-    bool planPathService(/* Add service message type here */) {
-        // Implement path planning service
-        // This would be used when specific start and end points are needed
+    bool planPathService(std_srvs::Trigger::Request& req, std_srvs::Trigger::Response& res) {
+        if (!octomap_ || !has_current_pose_ || !has_goal_) {
+            res.success = false;
+            res.message = "Missing required data for path planning (octomap, current pose, or goal)";
+            return true;
+        }
+        
+        bool success = planPath();
+        res.success = success;
+        res.message = success ? "Path planning successful" : "Path planning failed";
         return true;
     }
     

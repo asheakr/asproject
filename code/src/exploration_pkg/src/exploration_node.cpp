@@ -3,7 +3,7 @@
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/Point.h>
 #include <octomap_msgs/Octomap.h>
-#include <octomap_ros/conversions.h>
+#include <octomap_msgs/conversions.h>
 #include <octomap/octomap.h>
 #include <visualization_msgs/MarkerArray.h>
 #include <std_msgs/Bool.h>
@@ -154,7 +154,26 @@ private:
         }
         
         // Convert to octomap
-        octomap_ = dynamic_cast<octomap::OcTree*>(octomap_msgs::msgToMap(*msg));
+
+        if (msg->binary) {
+            octomap::AbstractOcTree* abstract_tree = octomap_msgs::binaryMsgToMap(*msg);
+            if (abstract_tree) {
+                octomap_ = dynamic_cast<octomap::OcTree*>(abstract_tree);
+                if (!octomap_) {
+                    delete abstract_tree;
+                    ROS_ERROR("Error converting binary octomap message to OcTree");
+                }
+            }
+        } else {
+            octomap::AbstractOcTree* abstract_tree = octomap_msgs::fullMsgToMap(*msg);
+            if (abstract_tree) {
+                octomap_ = dynamic_cast<octomap::OcTree*>(abstract_tree);
+                if (!octomap_) {
+                    delete abstract_tree;
+                    ROS_ERROR("Error converting full octomap message to OcTree");
+                }
+            }
+        }
         
         if (!octomap_) {
             ROS_ERROR("Failed to convert octomap message to octomap");
