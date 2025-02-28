@@ -1,0 +1,1 @@
+/home/ammar/asproject/code/devel/.private/state_machine_pkg/lib/pkgconfig/state_machine_pkg.pc
