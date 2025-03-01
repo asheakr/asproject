@@ -1,0 +1,25 @@
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:19:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+   19 | ros::Publisher takeoff_pub = [01;31m[Knh[m[K.advertise<std_msgs::Empty>("/takeoff_command", 10);
+      |                              [01;31m[K^~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:19:53:[m[K [01;31m[Kerror: [m[K‘[01m[KEmpty[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+   19 | ros::Publisher takeoff_pub = nh.advertise<std_msgs::[01;31m[KEmpty[m[K>("/takeoff_command", 10);
+      |                                                     [01;31m[K^~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:21:36:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+   21 | ros::Subscriber landing_state_sub= [01;31m[Knh[m[K.subscribe<std_msgs::String>(
+      |                                    [01;31m[K^~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:21:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   21 | ros::Subscriber landing_state_sub= nh.subscribe<std_msgs::String[01;31m[K>[m[K(
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:22:38:[m[K [01;31m[Kerror: [m[K‘[01m[KlandingStateCallback[m[K’ was not declared in this scope
+   22 |     "/landing_controller/state", 10, [01;31m[KlandingStateCallback[m[K);
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:[m[K In function ‘[01m[Kvoid sendTakeoffCommand()[m[K’:
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:25:15:[m[K [01;31m[Kerror: [m[K‘[01m[KEmpty[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+   25 |     std_msgs::[01;31m[KEmpty[m[K msg;
+      |               [01;31m[K^~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:26:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   26 |     takeoff_pub.publish([01;31m[Kmsg[m[K);
+      |                         [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/state_machine_node.dir/build.make:63: CMakeFiles/state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:800: CMakeFiles/state_machine_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

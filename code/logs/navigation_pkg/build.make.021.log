@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target landing_controller_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/landing_controller_node.dir/src/landing_controller.cpp.o[0m
+[ 75%] Built target navigation_controller_node
+[100%] [32m[1mLinking CXX executable /home/ammar/asproject/code/devel/.private/navigation_pkg/lib/navigation_pkg/landing_controller_node[0m
+[100%] Built target landing_controller_node

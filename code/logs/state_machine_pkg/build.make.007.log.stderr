@@ -1,0 +1,25 @@
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:92:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_msg[m[K’ does not name a type
+   92 |     [01;31m[Kstate_msg[m[K.header.stamp = ros::Time::now();
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:94:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+   94 |     [01;31m[Kif[m[K (current_state == TAKEOFF)
+      |     [01;31m[K^~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:96:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+   96 |     [01;31m[Kelse[m[K if (current_state == NAVIGATE)
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:99:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_msg[m[K’ does not name a type
+   99 |     [01;31m[Kstate_msg[m[K.start = (current_state != IDLE);
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktask_pub[m[K’ does not name a type
+  100 |     [01;31m[Ktask_pub[m[K.publish(state_msg);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:101:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  101 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ammar/asproject/code/src/state_machine_pkg/src/state_machine_node.cpp:119:9:[m[K [01;31m[Kerror: [m[K‘[01m[KupdateState[m[K’ was not declared in this scope
+  119 |         [01;31m[KupdateState[m[K();
+      |         [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/state_machine_node.dir/build.make:63: CMakeFiles/state_machine_node.dir/src/state_machine_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:800: CMakeFiles/state_machine_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

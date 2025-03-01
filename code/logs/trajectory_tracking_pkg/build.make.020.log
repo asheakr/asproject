@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target trajectory_tracker_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/trajectory_tracker_node.dir/src/trajectory_tracker.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/ammar/asproject/code/devel/.private/trajectory_tracking_pkg/lib/trajectory_tracking_pkg/trajectory_tracker_node[0m
+[100%] Built target trajectory_tracker_node
