@@ -15,16 +15,20 @@ endif()
 find_package(catkin REQUIRED COMPONENTS 
   roscpp 
   rospy 
-  std_msgs 
+  std_msgs
+  nav_msgs 
   geometry_msgs 
   mav_msgs
+  tf
   eigen_conversions
   tf_conversions
+  message_generation
 )
 
 catkin_package(CATKIN_DEPENDS 
   roscpp 
-  std_msgs 
+  std_msgs
+  nav_msgs 
   mav_msgs 
   tf
   eigen_conversions
@@ -33,7 +37,12 @@ catkin_package(CATKIN_DEPENDS
 
 find_package(Eigen3)
 
-include_directories(${catkin_INCLUDE_DIRS})
+#include_directories(${catkin_INCLUDE_DIRS})
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+
 add_executable(controller_node src/controller_node.cpp)
 add_dependencies(controller_node ${catkin_EXPORTED_TARGETS})
 
