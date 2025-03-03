@@ -1,7 +1,0 @@
-navigation_pkg
-/home/ammar/asproject/code/devel/.private/navigation_pkg/cmake.lock /home/ammar/asproject/code/devel/./cmake.lock
-/home/ammar/asproject/code/devel/.private/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig.cmake /home/ammar/asproject/code/devel/share/navigation_pkg/cmake/navigation_pkgConfig.cmake
-/home/ammar/asproject/code/devel/.private/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig-version.cmake /home/ammar/asproject/code/devel/share/navigation_pkg/cmake/navigation_pkgConfig-version.cmake
-/home/ammar/asproject/code/devel/.private/navigation_pkg/lib/navigation_pkg/navigation_controller_node /home/ammar/asproject/code/devel/lib/navigation_pkg/navigation_controller_node
-/home/ammar/asproject/code/devel/.private/navigation_pkg/lib/navigation_pkg/landing_controller_node /home/ammar/asproject/code/devel/lib/navigation_pkg/landing_controller_node
-/home/ammar/asproject/code/devel/.private/navigation_pkg/lib/pkgconfig/navigation_pkg.pc /home/ammar/asproject/code/devel/lib/pkgconfig/navigation_pkg.pc

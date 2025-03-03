@@ -1,1 +1,0 @@
-/home/ammar/asproject/code/devel/.private/nav_msgs/include/nav_msgs/GetMapResult.h

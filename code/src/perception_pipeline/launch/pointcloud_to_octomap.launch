@@ -1,0 +1,10 @@
+<launch>
+  <!-- Load the octomap server -->
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+    <!-- Set the input point cloud topic -->
+    <param name="resolution" value="0.05" />
+    <param name="frame_id" type="string" value="Quadrotor/Sensors/DepthCamera" />
+    <param name="sensor_model/max_range" value="5.0" />
+    <remap from="cloud_in" to="/realsense/depth/pointcloud_output" />
+  </node>
+</launch>

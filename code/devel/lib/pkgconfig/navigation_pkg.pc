@@ -1,1 +1,0 @@
-/home/ammar/asproject/code/devel/.private/navigation_pkg/lib/pkgconfig/navigation_pkg.pc

@@ -1,6 +1,0 @@
-/home/ammar/asproject/code/build/utils/CMakeFiles/install/strip.dir
-/home/ammar/asproject/code/build/utils/CMakeFiles/install/local.dir
-/home/ammar/asproject/code/build/utils/CMakeFiles/install.dir
-/home/ammar/asproject/code/build/utils/CMakeFiles/list_install_components.dir
-/home/ammar/asproject/code/build/utils/CMakeFiles/rebuild_cache.dir
-/home/ammar/asproject/code/build/utils/CMakeFiles/edit_cache.dir
