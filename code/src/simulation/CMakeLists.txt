@@ -29,6 +29,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(CATKIN_DEPENDS
         mav_msgs
+        rospy
 	)
 
 include(ExternalProject)
@@ -57,4 +58,9 @@ target_link_libraries(state_estimate_corruptor_node  ${catkin_LIBRARIES})
 target_link_libraries(w_to_unity ${catkin_LIBRARIES} socket++ -pthread)
 
 add_dependencies(w_to_unity libsocket ${catkin_EXPORTED_TARGETS})
+
+catkin_install_python(
+  PROGRAMS scripts/position_subscriber.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 

@@ -1,0 +1,11 @@
+66666666666666666#!/usr/bin/env python
+import rospy
+from geometry_msgs.msg import Point
+
+def callback(data):
+    rospy.loginfo(f"Received position from Unity: x={data.x}, y={data.y}, z={data.z}")
+
+rospy.init_node('unity_position_listener', anonymous=True)
+rospy.Subscriber("/unity_position", Point, callback)
+
+rospy.spin()

@@ -1,0 +1,18 @@
+digraph G {
+"Quadrotor/DepthCamera" -> "Quadrotor/Sensors/DepthCamera"[label="Broadcaster: /depth_frame_fix\nAverage rate: 8.819 Hz\nMost recent transform: 1741017684.471 ( -0.015 sec old)\nBuffer length: 4.649 sec\n"];
+"depth_camera" -> "Quadrotor/DepthCamera"[label="Broadcaster: /sim_depth_camera\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1741017684.456 sec old)\nBuffer length: 0.000 sec\n"];
+"world" -> "true_body"[label="Broadcaster: /unity_ros\nAverage rate: 29.795 Hz\nMost recent transform: 1741017684.299 ( 0.157 sec old)\nBuffer length: 4.867 sec\n"];
+"world" -> "body"[label="Broadcaster: /state_estimate_corruptor\nAverage rate: 23.264 Hz\nMost recent transform: 1741017684.299 ( 0.157 sec old)\nBuffer length: 3.783 sec\n"];
+"camera" -> "Quadrotor/RGBCameraLeft"[label="Broadcaster: /sim_rgb_camera\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1741017684.456 sec old)\nBuffer length: 0.000 sec\n"];
+"true_body" -> "camera"[label="Broadcaster: /camera_to_body\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1741017684.456 sec old)\nBuffer length: 0.000 sec\n"];
+"true_body" -> "depth_camera"[label="Broadcaster: /depth_camera_to_body\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1741017684.456 sec old)\nBuffer length: 0.000 sec\n"];
+"camera" -> "Quadrotor/RGBCameraRight"[label="Broadcaster: /sim_right_camera\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1741017684.456 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1741017684.456"[ shape=plaintext ] ;
+ }->"world";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1741017684.456"[ shape=plaintext ] ;
+ }->"Quadrotor/TrueState";
+}

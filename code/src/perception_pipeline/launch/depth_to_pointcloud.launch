@@ -1,7 +1,11 @@
 <launch>
     <!-- Start a nodelet manager -->
     <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager"/>
-
+    
+    <!-- Add a TF republisher to fix the frame issue -->
+    <node pkg="tf" type="static_transform_publisher" name="depth_frame_fix" 
+          args="0 0 0 0 0 0 Quadrotor/DepthCamera Quadrotor/Sensors/DepthCamera 100" />
+    
     <!-- Load depth_image_proc/point_cloud_xyz into the nodelet manager -->
     <node pkg="nodelet" type="nodelet" name="depth_to_pointcloud" args="load depth_image_proc/point_cloud_xyz nodelet_manager">
         <remap from="image_rect" to="/realsense/depth/image"/>
