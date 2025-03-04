@@ -8,10 +8,18 @@ add_compile_options(-std=c++11)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  mav_state_machine_msgs
+  #mav_state_machine_msgs
+  #roscpp
+  #std_msgs
   roscpp
   std_msgs
-)
+  nav_msgs
+  trajectory_msgs
+  trajectory_tracking_pkg
+  path_planning_pkg
+  exploration_pkg
+  perception_pipeline
+  )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

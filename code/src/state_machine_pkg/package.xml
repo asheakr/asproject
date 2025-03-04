@@ -7,7 +7,7 @@
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="ammar@todo.todo">ammar</maintainer>
+  <maintainer email="ammarsaleem.saleem@gmail.com">ammar</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -57,11 +57,26 @@
   <build_export_depend>std_msgs</build_export_depend>
   <build_depend>message_runtime</build_depend>  <!-- ADD THIS LINE -->
 
-
+   <!-- Add new dependencies (for Akhil & Pablo's system) -->
   <exec_depend>mav_state_machine_msgs</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>message_runtime</exec_depend>  <!-- ADD THIS LINE -->
+
+  <build_depend>trajectory_tracking_pkg</build_depend>
+  <build_depend>path_planning_pkg</build_depend>
+  <build_depend>perception_pkg</build_depend>
+  <build_depend>nav_msgs</build_depend>
+
+  <build_export_depend>trajectory_tracking_pkg</build_export_depend>
+  <build_export_depend>path_planning_pkg</build_export_depend>
+  <build_export_depend>perception_pkg</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+
+  <exec_depend>trajectory_tracking_pkg</exec_depend>
+  <exec_depend>path_planning_pkg</exec_depend>
+  <exec_depend>perception_pkg</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
